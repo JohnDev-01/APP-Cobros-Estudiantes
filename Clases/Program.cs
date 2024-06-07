@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ControlDeEstudiantes.Capas.Capas_De_Imprimir;
 using ControlDeEstudiantes;
+using ControlDeEstudiantes.Capas;
 namespace ControlDeEstudiantes
 {
     static class Program
@@ -17,7 +18,7 @@ namespace ControlDeEstudiantes
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Capas.FrmLogin());
+            Application.Run(new FrmLogin());
         }
     }
 }

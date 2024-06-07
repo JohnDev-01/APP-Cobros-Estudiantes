@@ -112,28 +112,29 @@
     <Compile Include="Capas\Capas De Imprimir\frmPagosEmpleadosImprimir.Designer.cs">
       <DependentUpon>frmPagosEmpleadosImprimir.cs</DependentUpon>
     </Compile>
-    <Compile Include="Capas\FormAgregarYEditar.cs">
+    <Compile Include="Conexion\Conexion.cs" />
+    <Compile Include="Datos\Insertar_Datos.cs" />
+    <Compile Include="Logica\Ladelanto.cs" />
+    <Compile Include="Logica\LPEmpleados.cs" />
+    <Compile Include="Logica\LPEstuadiantes.cs" />
+    <Compile Include="Logica\LRegistroEstudiantes.cs" />
+    <Compile Include="Logica\LUsuarios.cs" />
+    <Compile Include="Presentacion\Clientes\FormAgregarYEditar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Capas\FormAgregarYEditar.Designer.cs">
+    <Compile Include="Presentacion\Clientes\FormAgregarYEditar.Designer.cs">
       <DependentUpon>FormAgregarYEditar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Capas\FormPagosEmpleados.cs">
+    <Compile Include="Presentacion\Gastos\FormPagosEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Capas\FormPagosEmpleados.Designer.cs">
+    <Compile Include="Presentacion\Gastos\FormPagosEmpleados.Designer.cs">
       <DependentUpon>FormPagosEmpleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Capas\FormVerDetalles.cs">
+    <Compile Include="Presentacion\AdminSistema\frmAministrarDatosDeSeccion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Capas\FormVerDetalles.Designer.cs">
-      <DependentUpon>FormVerDetalles.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Capas\frmAministrarDatosDeSeccion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Capas\frmAministrarDatosDeSeccion.Designer.cs">
+    <Compile Include="Presentacion\AdminSistema\frmAministrarDatosDeSeccion.Designer.cs">
       <DependentUpon>frmAministrarDatosDeSeccion.cs</DependentUpon>
     </Compile>
     <Compile Include="Capas\frmBienvenido.cs">
@@ -142,10 +143,10 @@
     <Compile Include="Capas\frmBienvenido.Designer.cs">
       <DependentUpon>frmBienvenido.cs</DependentUpon>
     </Compile>
-    <Compile Include="Capas\frmBuscarClienteParaPagar.cs">
+    <Compile Include="Presentacion\Cobros\frmBuscarClienteParaPagar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Capas\frmBuscarClienteParaPagar.Designer.cs">
+    <Compile Include="Presentacion\Cobros\frmBuscarClienteParaPagar.Designer.cs">
       <DependentUpon>frmBuscarClienteParaPagar.cs</DependentUpon>
     </Compile>
     <Compile Include="Capas\Capas De Imprimir\frmImprimirListadoClientes.cs">
@@ -160,53 +161,47 @@
     <Compile Include="Capas\Capas De Imprimir\frmImprmirRecibo.Designer.cs">
       <DependentUpon>frmImprmirRecibo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Capas\frmCrear_Y_Editar_Usuarios.cs">
+    <Compile Include="Presentacion\AdminSistema\frmCrear_Y_Editar_Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Capas\frmCrear_Y_Editar_Usuarios.Designer.cs">
+    <Compile Include="Presentacion\AdminSistema\frmCrear_Y_Editar_Usuarios.Designer.cs">
       <DependentUpon>frmCrear_Y_Editar_Usuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Capas\FrmLogin.cs">
+    <Compile Include="Presentacion\InicioSesion\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Capas\FrmLogin.Designer.cs">
+    <Compile Include="Presentacion\InicioSesion\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Capas\frmReportes.cs">
+    <Compile Include="Presentacion\Comprobantes\frmReportes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Capas\frmReportes.Designer.cs">
+    <Compile Include="Presentacion\Comprobantes\frmReportes.Designer.cs">
       <DependentUpon>frmReportes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Capas\frmSalidasDeReportes.cs">
+    <Compile Include="Presentacion\Comprobantes\frmSalidasDeReportes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Capas\frmSalidasDeReportes.Designer.cs">
+    <Compile Include="Presentacion\Comprobantes\frmSalidasDeReportes.Designer.cs">
       <DependentUpon>frmSalidasDeReportes.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\SqlClase.cs" />
-    <Compile Include="Capas\FormBase.cs">
+    <Compile Include="Presentacion\Cobros\FormPagosDeEstudiantes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Capas\FormBase.Designer.cs">
-      <DependentUpon>FormBase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Capas\FormPagosDeEstudiantes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Capas\FormPagosDeEstudiantes.Designer.cs">
+    <Compile Include="Presentacion\Cobros\FormPagosDeEstudiantes.Designer.cs">
       <DependentUpon>FormPagosDeEstudiantes.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormInicio.cs">
+    <Compile Include="Presentacion\Inicio\FormInicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormInicio.Designer.cs">
+    <Compile Include="Presentacion\Inicio\FormInicio.Designer.cs">
       <DependentUpon>FormInicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Capas\FormRegistrar.cs">
+    <Compile Include="Presentacion\Gastos\FormRegistrar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Capas\FormRegistrar.Designer.cs">
+    <Compile Include="Presentacion\Gastos\FormRegistrar.Designer.cs">
       <DependentUpon>FormRegistrar.cs</DependentUpon>
     </Compile>
     <Compile Include="ParaImprimir\ImprimirListadoAtrasos.cs">
@@ -222,6 +217,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\Program.cs" />
+    <Compile Include="ParaImprimir\Recibos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Recibos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ParaImprimir\Reporte_ConAdelanto.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -250,28 +251,25 @@
     <EmbeddedResource Include="Capas\Capas De Imprimir\frmPagosEmpleadosImprimir.resx">
       <DependentUpon>frmPagosEmpleadosImprimir.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Capas\FormAgregarYEditar.resx">
+    <EmbeddedResource Include="Presentacion\Clientes\FormAgregarYEditar.resx">
       <DependentUpon>FormAgregarYEditar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Capas\FormPagosDeEstudiantes.resx">
+    <EmbeddedResource Include="Presentacion\Cobros\FormPagosDeEstudiantes.resx">
       <DependentUpon>FormPagosDeEstudiantes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Capas\FormPagosEmpleados.resx">
+    <EmbeddedResource Include="Presentacion\Gastos\FormPagosEmpleados.resx">
       <DependentUpon>FormPagosEmpleados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Capas\FormRegistrar.resx">
+    <EmbeddedResource Include="Presentacion\Gastos\FormRegistrar.resx">
       <DependentUpon>FormRegistrar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Capas\FormVerDetalles.resx">
-      <DependentUpon>FormVerDetalles.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Capas\frmAministrarDatosDeSeccion.resx">
+    <EmbeddedResource Include="Presentacion\AdminSistema\frmAministrarDatosDeSeccion.resx">
       <DependentUpon>frmAministrarDatosDeSeccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Capas\frmBienvenido.resx">
       <DependentUpon>frmBienvenido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Capas\frmBuscarClienteParaPagar.resx">
+    <EmbeddedResource Include="Presentacion\Cobros\frmBuscarClienteParaPagar.resx">
       <DependentUpon>frmBuscarClienteParaPagar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Capas\Capas De Imprimir\frmImprimirListadoClientes.resx">
@@ -280,22 +278,19 @@
     <EmbeddedResource Include="Capas\Capas De Imprimir\frmImprmirRecibo.resx">
       <DependentUpon>frmImprmirRecibo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Capas\FormBase.resx">
-      <DependentUpon>FormBase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Capas\frmCrear_Y_Editar_Usuarios.resx">
+    <EmbeddedResource Include="Presentacion\AdminSistema\frmCrear_Y_Editar_Usuarios.resx">
       <DependentUpon>frmCrear_Y_Editar_Usuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Capas\FrmLogin.resx">
+    <EmbeddedResource Include="Presentacion\InicioSesion\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Capas\frmReportes.resx">
+    <EmbeddedResource Include="Presentacion\Comprobantes\frmReportes.resx">
       <DependentUpon>frmReportes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Capas\frmSalidasDeReportes.resx">
+    <EmbeddedResource Include="Presentacion\Comprobantes\frmSalidasDeReportes.resx">
       <DependentUpon>frmSalidasDeReportes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormInicio.resx">
+    <EmbeddedResource Include="Presentacion\Inicio\FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ParaImprimir\ImprimirListadoAtrasos.rpt">
@@ -305,6 +300,10 @@
     <EmbeddedResource Include="ParaImprimir\ImprimirListadoEstudiantes.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ImprimirListadoEstudiantes.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParaImprimir\Recibos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Recibos.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ParaImprimir\Reporte_ConAdelanto.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -360,6 +359,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Presentacion\Reportes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

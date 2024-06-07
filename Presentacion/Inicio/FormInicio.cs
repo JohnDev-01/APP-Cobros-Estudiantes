@@ -43,9 +43,9 @@ namespace ControlDeEstudiantes
 
         private void BtnDetalles_Click(object sender, EventArgs e)
         {
-            Capas.FormVerDetalles OverDetalles = new Capas.FormVerDetalles();
-            OverDetalles.MdiParent = this.MdiParent;
-            OverDetalles.Show();
+            //Capas.FormVerDetalles OverDetalles = new Capas.FormVerDetalles();
+            //OverDetalles.MdiParent = this.MdiParent;
+            //OverDetalles.Show();
         }
 
         private void btnpagosEmpleados_Click(object sender, EventArgs e)

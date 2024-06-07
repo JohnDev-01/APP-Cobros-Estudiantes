@@ -14,6 +14,7 @@ namespace ControlDeEstudiantes.Clases
     {
 
         //Conexion Global:
+        string REConexion = "";
         private static SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["cn"].ConnectionString);
 
         public static void ListarConsulta(string consulta, DataGridView grilla)
@@ -49,10 +50,9 @@ namespace ControlDeEstudiantes.Clases
         public static DataTable ObtenerDatos(string nombreProcedure, string NombreParametro, string valorParametro)
         {
            
+            SqlCommand cmd = new SqlCommand(nombreProcedure, cn);
 
-                SqlCommand cmd = new SqlCommand(nombreProcedure, cn);
-
-                cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.AddWithValue(NombreParametro, valorParametro);
 
