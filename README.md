@@ -8,7 +8,6 @@ APP-Cobros-Estudiantes es una aplicación de escritorio desarrollada para ayudar
 - **Gestión de Estudiantes**: Permite mantener un registro actualizado de los estudiantes y sus detalles de pago.
 - **Generación de Recibos**: Genera recibos de pago para los estudiantes.
 - **Reportes Financieros**: Genera reportes de pagos recibidos y balances financieros.
-- **Notificaciones**: Envía notificaciones de pagos pendientes y recordatorios a los estudiantes.
 
 ## Requisitos
 
